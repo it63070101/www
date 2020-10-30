@@ -6,6 +6,10 @@
 <body>
 	<h1 align="center">Welcome To My Webpage</h1>
 	<h2 align="center">นายศุภชัย ชื่นสุขศรี (ฟ่าง)</h2>
-	<img src="image-1.gif" width="400px" alt="This is me when I want to eat!">
+	<p align="center">
+		<img src="image-1.gif" height="200" alt="This is me when I want to eat!">
+		<br>
+		<img src="image-2.gif" height="200">
+	</p>
 </body>
 </html>
