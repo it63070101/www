@@ -3,6 +3,8 @@
 		<title>Hello world</title>
 	</head>
 	<body>
+		<?php
+		echo '
 		<h1>My First Heading</h1>
 		<p>My First Paragraph</p>
 		<img src="cat.png">
@@ -15,5 +17,7 @@
 			<li>Yahoo</li>
 			<li>Amazon</li>
 		</ul>
+		';
+		?>
 	</body>
 </html>
