@@ -3,6 +3,11 @@
 <title>ITF Lab</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style type="text/css">
+  body {
+    background-color: rgba(0, 0, 0, 0.125);
+  }
+</style>
 </head>
 <body>
 <div class="container">
@@ -17,7 +22,7 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
-<table class="table table-dark my-4" width="100%">
+<table class="table table-light my-4 shadow-sm" width="100%">
   <thead>
     <tr>
       <th> <div align="center">Name</div></th>
