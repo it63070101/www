@@ -27,7 +27,7 @@
 								echo "DELETE COMPLETED";
 							}
 							else {
-								echo "FOUND SOMETHING WRONG"
+								echo "FOUND SOMETHING WRONG";
 							}
 						?>
 						</h2>
