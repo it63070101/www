@@ -19,11 +19,18 @@
 						<div class="row">
 							<div class="col"><h1 class="text-monospace">Delete</h1></div>
 						</div>
+						<h2 align="center">
 						<?php
 							$conn = mysqli_connect('suphafang.mysql.database.azure.com', 'suphafang@suphafang', 'Fang2545', 'ITFLab');
 							$del = mysqli_query($conn, 'DELETE FROM guestbook WHERE ID = '.$_GET['ID'].'');
-
+							if $del == True {
+								echo "DELETE COMPLETED";
+							}
+							else {
+								echo "FOUND SOMETHING WRONG"
+							}
 						?>
+						</h2>
 					</div>
 				</div>
 			</div>
