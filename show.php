@@ -12,7 +12,7 @@
 <body>
 <div class="container">
   <div class="row">
-    <div class="col col-md-6">
+    <div class="col-12 col-lg-8 offset-lg-2">
       <?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'suphafang.mysql.database.azure.com', 'suphafang@suphafang', 'Fang2545', 'ITFLab', 3306);
