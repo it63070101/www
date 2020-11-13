@@ -23,7 +23,7 @@
 						<?php
 							$conn = mysqli_connect('suphafang.mysql.database.azure.com', 'suphafang@suphafang', 'Fang2545', 'ITFLab');
 							$del = mysqli_query($conn, 'DELETE FROM guestbook WHERE ID = '.$_GET['ID'].'');
-							if $del == True {
+							if $del {
 								echo "DELETE COMPLETED";
 							}
 							else {
