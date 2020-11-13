@@ -16,20 +16,18 @@
 			<div class="col-12 col-lg-8 offset-lg-2">
 				<div class="card shadow">
 					<div class="card-body">
-						<div class="row">
-							<div class="col"><h1 class="text-monospace">Delete</h1></div>
-						</div>
 						<h2 align="center">
 						<?php
 							$conn = mysqli_connect('suphafang.mysql.database.azure.com', 'suphafang@suphafang', 'Fang2545', 'ITFLab');
 							if (mysqli_query($conn, 'DELETE FROM guestbook WHERE ID = '.$_GET['ID'].'')) {
-								echo "DELETE COMPLETED";
+								echo 'DELETE COMPLETED';
 							}
 							else {
-								echo "FOUND SOMETHING WRONG";
+								echo 'ERROR!';
 							}
 						?>
 						</h2>
+						<p align="center"><a href="show.php" class="btn btn-sm btn-dark">BACK</a></p>
 					</div>
 				</div>
 			</div>
