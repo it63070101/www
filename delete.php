@@ -27,8 +27,12 @@
 								    die('Failed to connect to MySQL: '.mysqli_connect_error());
 								}
 								$del = mysqli_query($conn, 'DELETE * FROM guestbook WHERE ID = '.$_GET['ID'].'');
-								if $del == True:
+								if $del == True {
 									echo '<h2>DELETE SUCCESS</h2>';
+								}
+								else {
+									echo '<h2>DELETE UNSUCCESSFUL</h2>';
+								}
 								mysqli_close($conn);
 							?>
 					</div>
