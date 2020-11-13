@@ -19,22 +19,11 @@
 						<div class="row">
 							<div class="col"><h1 class="text-monospace">Delete</h1></div>
 						</div>
-							<?php
-								$conn = mysqli_init();
-								mysqli_real_connect($conn, 'suphafang.mysql.database.azure.com', 'suphafang@suphafang', 'Fang2545', 'ITFLab', 3306);
-								if (mysqli_connect_errno($conn))
-								{
-								    die('Failed to connect to MySQL: '.mysqli_connect_error());
-								}
-								$del = mysqli_query($conn, 'DELETE * FROM guestbook WHERE ID = '.$_GET['ID'].'');
-								if $del == True {
-									echo '<h2>DELETE SUCCESS</h2>';
-								}
-								else {
-									echo '<h2>DELETE UNSUCCESSFUL</h2>';
-								}
-								mysqli_close($conn);
-							?>
+						<?php
+							$conn = mysqli_connect('suphafang.mysql.database.azure.com', 'suphafang@suphafang', 'Fang2545', 'ITFLab');
+							$del = mysqli_query($conn, 'DELETE FROM guestbook WHERE ID = '.$_GET['ID'].'');
+
+						?>
 					</div>
 				</div>
 			</div>
