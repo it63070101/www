@@ -1,9 +1,14 @@
 <html>
 <head>
 <title>ITF Lab</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
-<?php
+<div class="container">
+  <div class="row">
+    <div class="col col-md-6">
+      <?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'suphafang.mysql.database.azure.com', 'suphafang@suphafang', 'Fang2545', 'ITFLab', 3306);
 if (mysqli_connect_errno($conn))
@@ -12,12 +17,15 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
-<table width="600" border="1">
-  <tr>
-    <th width="100"> <div align="center">Name</div></th>
-    <th width="350"> <div align="center">Comment </div></th>
-    <th width="150"> <div align="center">Link </div></th>
-  </tr>
+<table class="table">
+  <thead>
+    <tr>
+      <th> <div align="center">Name</div></th>
+      <th> <div align="center">Comment </div></th>
+      <th> <div align="center">Link </div></th>
+    </tr>
+  </thead>
+  <tbody>
 <?php
 while($Result = mysqli_fetch_array($res))
 {
@@ -30,9 +38,13 @@ while($Result = mysqli_fetch_array($res))
 <?php
 }
 ?>
+  </tbody>
 </table>
 <?php
 mysqli_close($conn);
 ?>
+    </div>
+  </div>
+</div>
 </body>
 </html>
