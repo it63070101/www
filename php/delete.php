@@ -22,7 +22,7 @@
 						<h2 align="center">
 						<?php
 							$conn = mysqli_connect('suphafang.mysql.database.azure.com', 'suphafang@suphafang', 'Fang2545', 'ITFLab');
-							if (mysqli_query($conn, 'DELETE FROM guestbook WHERE ID = '.$_GET['ID'].'');) {
+							if (mysqli_query($conn, 'DELETE FROM guestbook WHERE ID = '.$_GET['ID'].'')) {
 								echo "DELETE COMPLETED";
 							}
 							else {
