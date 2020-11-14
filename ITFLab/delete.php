@@ -20,7 +20,7 @@
 			<div class="col-12 col-lg-8 offset-lg-2">
 				<div class="card shadow">
 					<div class="card-body">
-						<h2>
+						<h2 align="center">
 						<?php
 							if(mysqli_query($conn, $sql)) {
 								echo "DELETE COMPLETED";
