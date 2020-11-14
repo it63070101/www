@@ -27,6 +27,7 @@
 			<div class="col-12 col-lg-8 offset-lg-2">
 				<div class="card shadow">
 					<div class="card-body">
+						<h2 align="center">
 						<?php
 							if(mysqli_query($conn, $sql)) {
 								echo "ADD COMPLETED";
@@ -35,7 +36,7 @@
 								echo "FAILED TO ADD";
 							}
 						?>
-						<h2 align="center"></h2>
+						</h2>
 						<p align="center" class="mt-4 mb-0"><a href="index.php" class="btn btn-sm btn-warning">BACK</a></p>
 					</div>
 				</div>

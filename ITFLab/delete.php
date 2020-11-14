@@ -1,3 +1,7 @@
+<?php
+	$conn = mysqli_connect('suphafang.mysql.database.azure.com', 'suphafang@suphafang', 'Fang2545', 'ITFLab');
+	$sql = 'DELETE FROM guestbook WHERE ID = '.$_GET['ID'].'';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +20,16 @@
 			<div class="col-12 col-lg-8 offset-lg-2">
 				<div class="card shadow">
 					<div class="card-body">
-						<h2 align="center">DELETE COMPLETED</h2>
+						<h2>
+						<?php
+							if(mysqli_query($conn, $sql)) {
+								echo "DELETE COMPLETED";
+							}
+							else {
+								echo "FAILED TO DELETE";
+							}
+						?>
+						</h2>
 						<p align="center" class="mt-4 mb-0"><a href="index.php" class="btn btn-sm btn-warning">BACK</a></p>
 					</div>
 				</div>
