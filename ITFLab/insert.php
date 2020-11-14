@@ -32,7 +32,7 @@
 								echo "ADD COMPLETED";
 							}
 							else {
-								echo "FAILED TO ADD"
+								echo "FAILED TO ADD";
 							}
 						?>
 						<h2 align="center"></h2>
