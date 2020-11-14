@@ -17,7 +17,7 @@
 				<div class="card shadow">
 					<div class="card-body">
 						<h2 align="center">DELETE COMPLETED</h2>
-						<p align="center" class="mt-4 mb-0"><a href="index.html" class="btn btn-sm btn-warning">BACK</a></p>
+						<p align="center" class="mt-4 mb-0"><a href="index.php" class="btn btn-sm btn-warning">BACK</a></p>
 					</div>
 				</div>
 			</div>

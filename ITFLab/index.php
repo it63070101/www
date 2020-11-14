@@ -18,7 +18,7 @@
 					<div class="card-body">
 						<div class="row">
 							<div class="col-6"><h1 class="text-monospace">Data</h1></div>
-							<div class="col-6 text-right"><a href="form.html" class="btn btn-warning btn-sm font-weight-bold">ADD</a></div>
+							<div class="col-6 text-right"><a href="form.php" class="btn btn-warning btn-sm font-weight-bold">ADD</a></div>
 						</div>
 						<div class="table-responsive">
 							<?php
@@ -44,7 +44,7 @@
 										while($Result = mysqli_fetch_array($res)) {
 									?>
 									<tr>
-										<td><a href="delete.html?ID=<?php echo $Result['ID'];?>" class="btn btn-sm btn-danger mb-2 mb-md-0">DEL</a> <a href="edit.html?ID=<?php echo $Result['ID'];?>" class="btn btn-sm btn-dark">EDIT</a></td>
+										<td><a href="delete.php?ID=<?php echo $Result['ID'];?>" class="btn btn-sm btn-danger mb-2 mb-md-0">DEL</a> <a href="edit.php?ID=<?php echo $Result['ID'];?>" class="btn btn-sm btn-dark">EDIT</a></td>
 										<td><?php echo $Result['Name'];?></td>
 										<td><?php echo $Result['Comment'];?></td>
 										<td><?php echo $Result['Link'];?></td>

@@ -19,7 +19,7 @@
 						<div class="row">
 							<div class="col-6"><h1 class="text-monospace">Edit</h1></div>
 						</div>
-						<form action="insert.html">
+						<form action="update.php" method="post">
 							<div class="form-group">
 								<label>Name</label>
 								<input type="text" name="" class="form-control" required>
@@ -34,7 +34,7 @@
 							</div>
 							<div class="text-center">
 								<button type="submit" class="btn btn-sm btn-warning my-3 font-weight-bold">SAVE</button>
-								<a class="btn btn-sm btn-light my-3" href="index.html">CANCLE</a>
+								<a class="btn btn-sm btn-light my-3" href="index.php">CANCLE</a>
 							</div>
 						</form>
 					</div>
