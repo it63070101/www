@@ -22,15 +22,15 @@
 						<form action="insert.php" method="post">
 							<div class="form-group">
 								<label>Name</label>
-								<input type="text" name="" class="form-control" required>
+								<input type="text" name="name" class="form-control" required>
 							</div>
 							<div class="form-group">
 								<label>Comment</label>
-								<textarea class="form-control" rows="5" required></textarea>
+								<textarea name="comment" class="form-control" rows="5" required></textarea>
 							</div>
 							<div class="form-group">
 								<label>Link</label>
-								<input type="text" name="" class="form-control">
+								<input type="text" name="link" class="form-control">
 							</div>
 							<div class="text-center">
 								<button type="submit" class="btn btn-sm btn-warning my-3 font-weight-bold">SUBMIT</button>
