@@ -19,7 +19,7 @@
 						<div class="row">
 							<div class="col-6"><h1 class="text-monospace">Form</h1></div>
 						</div>
-						<form action="insert.html">
+						<form action="insert.php" method="post">
 							<div class="form-group">
 								<label>Name</label>
 								<input type="text" name="" class="form-control" required>
